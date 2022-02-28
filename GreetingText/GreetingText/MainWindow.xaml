@@ -1,0 +1,21 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GreetingText"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.OpacityMask>
+            <SolidColorBrush Color="#FF227FA2" Opacity="0.65"/>
+        </Grid.OpacityMask>
+        <Grid.Background>
+            <ImageBrush ImageSource="/photo-1522383225653-ed111181a951.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <TextBox x:Name="GreetingTextBox" HorizontalAlignment="Center" Margin="0,110,0,0" TextWrapping="Wrap" Text="Type Your Greeting Here" VerticalAlignment="Top" Width="420" Height="89" FontSize="30" FontFamily="Century Gothic" TextAlignment="Center" BorderBrush="#FFDAF2FC" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" UseLayoutRounding="False" TextChanged="TextBox_TextChanged"/>
+        <Button x:Name="SubmitGreetingButon" Content="Button" HorizontalAlignment="Center" Margin="0,255,0,0" VerticalAlignment="Top" Height="45" Width="148" BorderBrush="#FFF94141" Background="#FFEDCDCF" FontFamily="Century Gothic" FontSize="18"/>
+      
+       
+    </Grid>
+</Window>
